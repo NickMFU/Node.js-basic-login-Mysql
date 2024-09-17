@@ -87,3 +87,53 @@ Register: http://localhost:5000/register.html
 Login: http://localhost:5000/login.html
 Once logged in, users will be redirected to the personalized Dashboard.
 
+### API Endpoints
+This project exposes the following API endpoints:
+
+### 1. Register User
+Endpoint: POST  http://localhost:5000/register
+
+Description: Registers a new user and stores their details in the MySQL database.
+
+Body Parameters:
+
+name: User's full name
+email: User's email address
+password: User's password (stored as a hash)
+phone: User's phone number
+Example Request:
+
+json
+Copy code
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "password123",
+  "phone": "1234567890"
+}
+###  2. Login User
+Endpoint: POST http://localhost:5000/login
+
+Description: Authenticates a user with email and password, returning a JWT token if successful.
+
+Body Parameters:
+
+email: User's email address
+password: User's password
+Example Request:
+
+json
+Copy code
+{
+  "email": "john@example.com",
+  "password": "password123"
+}
+Response:
+
+On success: { "token": "your_jwt_token" }
+On failure: { "message": "Invalid credentials" }
+###  3. Dashboard
+Endpoint: GET [/dashboard](http://localhost:5000/dashboard)
+Description: Returns a personalized message with the user's name. Requires JWT authentication.
+Headers: Authorization: Bearer <JWT token>
+
