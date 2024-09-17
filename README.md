@@ -35,12 +35,12 @@ npm install
 ```
 This will install the following main dependencies:
 
--express: Web framework for Node.js
--mysql2: MySQL driver for Node.js
--bcryptjs: For password hashing
--jsonwebtoken: To generate and verify JWT tokens
--body-parser: To parse incoming request bodies
--nodemon
+- express: Web framework for Node.js
+- mysql2: MySQL driver for Node.js
+- bcryptjs: For password hashing
+- jsonwebtoken: To generate and verify JWT tokens
+- body-parser: To parse incoming request bodies
+- nodemon : Run project
 
 ### 3. Configure MySQL Database
 Start XAMPP and make sure MySQL is running.
