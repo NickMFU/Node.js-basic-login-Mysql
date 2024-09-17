@@ -22,14 +22,17 @@ Before running this project, ensure you have the following installed:
 
 ### 1. Clone the Repository
 
-- git clone https://github.com/your-username/your-repo-name.git
+```bash
+git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+```
+
 ### 2. Install Dependencies
+
 Install the necessary Node.js packages using npm:
-
-
-Copy code
+```bash
 npm install
+```
 This will install the following main dependencies:
 
 express: Web framework for Node.js
@@ -37,6 +40,7 @@ mysql2: MySQL driver for Node.js
 bcryptjs: For password hashing
 jsonwebtoken: To generate and verify JWT tokens
 body-parser: To parse incoming request bodies
+
 ### 3. Configure MySQL Database
 Start XAMPP and make sure MySQL is running.
 
@@ -55,25 +59,28 @@ CREATE TABLE users (
     password VARCHAR(255),
     phone VARCHAR(15)
 );
-4. Set Up Environment Variables (Optional)
+### 4. Set Up Environment Variables (Optional)
 If you need to use custom database credentials (such as a password for the MySQL root user), create a .env file in the project root and define the following variables:
 
-bash
-Copy code
+```bash
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_mysql_password
 DB_NAME=users_db
 JWT_SECRET=your_jwt_secret
-5. Start the Node.js Server
+
+```
+
+### 5. Start the Node.js Server
 After setting up the database, run the server:
 
-bash
-Copy code
+```bash
 node index.js
+```
+
 The server will be running on http://localhost:5000.
 
-6. Serve the HTML Pages
+### 6. Serve the HTML Pages
 You can access the HTML pages for user registration and login via the following URLs:
 
 Register: http://localhost:5000/register.html
