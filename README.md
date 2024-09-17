@@ -76,7 +76,9 @@ JWT_SECRET=your_jwt_secret
 After setting up the database, run the server:
 
 ```bash
-node index.js
+node index.js 
+OR
+npm run dev //Run with nodemon
 ```
 
 The server will be running on http://localhost:5000.
