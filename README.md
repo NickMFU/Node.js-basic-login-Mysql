@@ -1,28 +1,33 @@
-Full-Stack User Authentication with Node.js and MySQL
+# Full-Stack User Authentication with Node.js and MySQL
+
 This project implements a simple user authentication system using Node.js, Express, and MySQL (XAMPP). Users can register, log in, and access a personalized dashboard displaying their name after login.
 
-Features
-User Registration (with Name, Email, Password, Phone)
-User Login with JWT Authentication
-Personalized Dashboard displaying the user's name
-Password hashing for security (using bcrypt)
-MySQL database integration with XAMPP
-Prerequisites
+## Features
+
+- User Registration (with Name, Email, Password, Phone)
+- User Login with JWT Authentication
+- Personalized Dashboard displaying the user's name
+- Password hashing for security (using bcrypt)
+- MySQL database integration with XAMPP
+
+## Prerequisites
+
 Before running this project, ensure you have the following installed:
 
-Node.js (v12 or later) - Download here
-XAMPP (MySQL and Apache) - Download here
-Postman (optional) for API testing - Download here
-Project Setup
-1. Clone the Repository
-bash
-Copy code
-git clone https://github.com/your-username/your-repo-name.git
+- **Node.js** (v12 or later) - [Download here](https://nodejs.org/)
+- **XAMPP** (MySQL and Apache) - [Download here](https://www.apachefriends.org/index.html)
+- **Postman** (optional) for API testing - [Download here](https://www.postman.com/)
+
+## Project Setup
+
+### 1. Clone the Repository
+
+- git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-2. Install Dependencies
+### 2. Install Dependencies
 Install the necessary Node.js packages using npm:
 
-bash
+
 Copy code
 npm install
 This will install the following main dependencies:
@@ -32,7 +37,7 @@ mysql2: MySQL driver for Node.js
 bcryptjs: For password hashing
 jsonwebtoken: To generate and verify JWT tokens
 body-parser: To parse incoming request bodies
-3. Configure MySQL Database
+### 3. Configure MySQL Database
 Start XAMPP and make sure MySQL is running.
 
 Open phpMyAdmin by clicking on it in the XAMPP Control Panel.
@@ -74,3 +79,4 @@ You can access the HTML pages for user registration and login via the following 
 Register: http://localhost:5000/register.html
 Login: http://localhost:5000/login.html
 Once logged in, users will be redirected to the personalized Dashboard.
+
